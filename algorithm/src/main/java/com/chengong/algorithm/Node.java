@@ -6,7 +6,9 @@ import java.util.Set;
 /**
  * Created by chengong on 2/25/14.
  */
-public class Node<T> {private T value;
+public class Node<T> {
+
+    private T value;
     private Set<Node<T>> neighbors;
 
     public Node(T value, Set<Node<T>> neighbors) {
@@ -38,5 +40,10 @@ public class Node<T> {private T value;
 
     public Set<Node<T>> getNeighbors() {
         return neighbors;
+    }
+
+    @Override
+    public String toString(){
+        return value.toString();
     }
 }

@@ -1,6 +1,7 @@
 package com.chengong.test.algorithm;
 
 import com.chengong.algorithm.CloneGraph;
+import com.chengong.algorithm.Graph;
 import com.chengong.algorithm.Node;
 import com.chengong.algorithm.TraverseGraph;
 import org.junit.Test;
@@ -40,8 +41,14 @@ public class TraverseGraphTest {
         TraverseGraph.breadthFirstIterative(rootNode);
 
         System.out.println("clone with depthFirstRecursive");
-        Node<String> clonedGraph = CloneGraph.depthFirstRecursive(rootNode);
+        Node<String> clonedNode = CloneGraph.depthFirstRecursive(rootNode);
         TraverseGraph.breadthFirstIterative(rootNode);
-        TraverseGraph.breadthFirstIterative(clonedGraph);
+        TraverseGraph.breadthFirstIterative(clonedNode);
+
+        Graph originalGraph = new Graph(rootNode);
+        Graph clonedGraph = new Graph(clonedNode);
+
+        System.out.println(originalGraph.toString());
+        System.out.println(clonedGraph.toString());
     }
 }
