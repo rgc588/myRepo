@@ -1,0 +1,15 @@
+<!-- Spring-Common.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="GameAccountManager" class="com.chengong.implement.GameAccountManager">
+        <property name="account" ref="Account" />
+    </bean>
+
+    <bean id="Account" class="com.chengong.domainObject.Account">
+        <property name="accountNumber" value= "12345"/>
+    </bean>
+
+</beans>
