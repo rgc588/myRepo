@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 /**
  * Created by chengong on 3/6/14.
  */
-public class sortingTest {
+public class SortingTest {
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
     @Test
