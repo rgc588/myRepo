@@ -6,7 +6,7 @@ import com.chengong.algorithm.leetcode.BaseClasses.ListNode;
 /**
  * Created by cheng on 2/6/2017.
  */
-public class _2AddTwoNumbers {
+public class M2AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode rst = new ListNode(-1);
         int carry = 0;
