@@ -1,9 +1,6 @@
 package com.chengong.algorithm.leetcode;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by cheng on 3/20/2017.
@@ -11,52 +8,33 @@ import java.util.Map;
 public class M491IncreasingSubsequences {
     public List<List<Integer>> findSubsequences(int[] nums) {
         List<List<Integer>> rst = new ArrayList<>();
-        Map<Integer, List<List<Integer>>> map = new HashMap<>();
-        Map<Integer, List<List<Integer>>> last = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            if (map.containsKey(nums[i])) {
-                List<List<Integer>> tmp = new ArrayList<>();
-                for (List<Integer> l : last.get(nums[i])){
-                    List<Integer> nl = new ArrayList<>();
-                    nl.addAll(l);
-                    nl.add(nums[i]);
-                    tmp.add(nl);
+        List<Integer> seq = new ArrayList<>();
+        helper(-1, 0, nums, seq, rst);
+        return rst;
+    }
+
+    private void helper(int last, int index, int[] nums, List<Integer> seq, List<List<Integer>> rst) {
+        if (seq.size() > 1) {
+            List<Integer> newList = new ArrayList<>();
+            newList.addAll(seq);
+            rst.add(newList);
+        }
+        Set<Integer> cache = new HashSet<>();
+        for (int i = index; i < nums.length; i++) {
+            if((last >= 0 && (nums[last] >= nums[i])) || cache.contains(nums[i])) continue;
+            cache.add(nums[i]);
+            int count = 0;
+            for (int j = i; j < nums.length; j++) {
+                if (nums[j] == nums[i]) {
+                    count++;
+                    seq.add(nums[j]);
+                    helper(j, j+1, nums, seq, rst);
                 }
-                map.get(nums[i]).addAll(tmp);
-                last.put(nums[i], tmp);
-            } else {
-                List<List<Integer>> tmp = new ArrayList<>();
-                for (Integer key : map.keySet()) {
-                    if (key <= nums[i]) {
-                        List<Integer> l = new ArrayList<>();
-                        l.add(key);
-                        l.add(nums[i]);
-                        tmp.add(l);
-                        for (List<Integer> each : map.get(key)) {
-                            List<Integer> t = new ArrayList<>();
-                            t.addAll(each);
-                            t.add(nums[i]);
-                            tmp.add(t);
-                        }
-                    }
-                }
-                map.put(nums[i], tmp);
-                List<List<Integer>> lastList = new ArrayList<>();
-                for (List<Integer> each : tmp) {
-                    List<Integer> nl = new ArrayList<>();
-                    nl.addAll(each);
-                    lastList.add(nl);
-                }
-                List<Integer> self = new ArrayList<>();
-                self.add(nums[i]);
-                lastList.add(self);
-                last.put(nums[i], lastList);
+            }
+            for (int j = 0; j < count; j++) {
+                seq.remove(seq.size()-1);
             }
         }
-        for (List<List<Integer>> v : map.values()) {
-            rst.addAll(v);
-        }
-        return rst;
     }
 
     public static void main(String[] args) {
