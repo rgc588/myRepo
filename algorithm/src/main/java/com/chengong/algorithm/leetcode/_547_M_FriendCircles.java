@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * Created by cheng on 4/3/2017.
  */
-public class M547FriendCircles {
+public class _547_M_FriendCircles {
     public int findCircleNum(int[][] M) {
         Set<Integer> cache = new HashSet<>();
         int i = 0;
@@ -39,7 +39,7 @@ public class M547FriendCircles {
 
     public static void main(String[] args) {
         int[][] M = new int[][] {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}};
-        M547FriendCircles sol = new M547FriendCircles();
+        _547_M_FriendCircles sol = new _547_M_FriendCircles();
         System.out.print(sol.findCircleNum(M));
     }
 }

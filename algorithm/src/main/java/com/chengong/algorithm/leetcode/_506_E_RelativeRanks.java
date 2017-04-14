@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Created by cheng on 3/1/2017.
  */
-public class E506RelativeRanks {
+public class _506_E_RelativeRanks {
     public String[] findRelativeRanks(int[] nums) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < nums.length; i++) {

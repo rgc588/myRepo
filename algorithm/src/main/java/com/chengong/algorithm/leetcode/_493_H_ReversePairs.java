@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 3/17/2017.
  */
-public class H493ReversePairs {
+public class _493_H_ReversePairs {
     int[] copied;
     public int reversePairs(int[] nums) {
         this.copied = new int[nums.length];
@@ -38,7 +38,7 @@ public class H493ReversePairs {
 
     public static void main(String[] args) {
         int[] input = new int[] {-5, -5};
-        H493ReversePairs sol = new H493ReversePairs();
+        _493_H_ReversePairs sol = new _493_H_ReversePairs();
         System.out.println(sol.reversePairs(input));
     }
 }

@@ -5,7 +5,7 @@ import com.chengong.algorithm.TreeNode;
 /**
  * Created by cheng on 2/28/2017.
  */
-public class M513FindBottomLeftTreeValue {
+public class _513_M_FindBottomLeftTreeValue {
     public int findBottomLeftValue(TreeNode root) {
         int[] mem = new int[2];
         mem[1] = -1;

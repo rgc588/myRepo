@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 4/3/2017.
  */
-public class E14LongestCommonPrefix {
+public class _14_E_LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         if (strs==null || strs.length==0) return "";
         String prefix = strs[0];

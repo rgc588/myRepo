@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 3/9/2017.
  */
-public class M498DiagonalTraverse {
+public class _498_M_DiagonalTraverse {
     public int[] findDiagonalOrder(int[][] matrix) {
         int m = matrix.length;
         if (m == 0) return new int[0];

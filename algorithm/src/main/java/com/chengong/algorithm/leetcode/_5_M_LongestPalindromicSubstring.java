@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 2/6/2017.
  */
-public class M5LongestPalindromicSubstring {
+public class _5_M_LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
         if (s == null || s.length() == 0) return s;
         boolean[] cache = new boolean[s.length()];
@@ -35,7 +35,7 @@ public class M5LongestPalindromicSubstring {
     }
 
     public static void main(String[] args) {
-        M5LongestPalindromicSubstring sol = new M5LongestPalindromicSubstring();
+        _5_M_LongestPalindromicSubstring sol = new _5_M_LongestPalindromicSubstring();
         String input = "abcba";
         String output = sol.longestPalindrome(input);
         System.out.println(output.equals("abcba"));

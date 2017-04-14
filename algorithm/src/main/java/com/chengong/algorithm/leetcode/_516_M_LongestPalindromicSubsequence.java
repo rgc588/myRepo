@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 2/27/2017.
  */
-public class M516LongestPalindromicSubsequence {
+public class _516_M_LongestPalindromicSubsequence {
     public int longestPalindromeSubseq(String s) {
         Integer[][] mem = new Integer[s.length()][s.length()];
         return helper(s, 0, s.length()-1, mem);

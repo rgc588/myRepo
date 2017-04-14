@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 2/16/2017.
  */
-public class M8StringToIntegerATOI {
+public class _8_M_StringToIntegerATOI {
     public int myAtoi(String str) {
         int i = 0;
         while(i < str.length() && str.charAt(i) == ' ') {
@@ -33,7 +33,7 @@ public class M8StringToIntegerATOI {
 
     public static void main(String[] args) {
         String input = "-1";
-        M8StringToIntegerATOI sol = new M8StringToIntegerATOI();
+        _8_M_StringToIntegerATOI sol = new _8_M_StringToIntegerATOI();
         int rst = sol.myAtoi(input);
         System.out.println(rst);
     }

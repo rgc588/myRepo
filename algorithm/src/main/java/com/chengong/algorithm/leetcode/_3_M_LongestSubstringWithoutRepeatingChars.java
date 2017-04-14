@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by cheng on 2/6/2017.
  */
-public class M3LongestSubstringWithoutRepeatingChars {
+public class _3_M_LongestSubstringWithoutRepeatingChars {
     public int lengthOfLongestSubstring(String s) {
         int max = 0;
         int cur = -1;

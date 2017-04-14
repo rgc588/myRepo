@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by cheng on 4/3/2017.
  */
-public class M17LetterCombinationsofaPhoneNumber {
+public class _17_M_LetterCombinationsofaPhoneNumber {
     String[] mapping = new String[] {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
     public List<String> letterCombinations(String digits) {
         List<String> rst = new ArrayList<>();

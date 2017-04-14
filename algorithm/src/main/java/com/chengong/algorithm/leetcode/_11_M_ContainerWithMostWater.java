@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 4/3/2017.
  */
-public class M11ContainerWithMostWater {
+public class _11_M_ContainerWithMostWater {
     public int maxArea(int[] height) {
         int max = 0;
         if (height == null || height.length < 2) return max;

@@ -6,7 +6,7 @@ import java.util.Queue;
 /**
  * Created by cheng on 4/11/2017.
  */
-public class M482LicenseKeyFormatting {
+public class _482_M_LicenseKeyFormatting {
     public String licenseKeyFormatting(String S, int K) {
         Queue<Character> q = new LinkedList<>();
         int count = 0;

@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * Created by cheng on 3/10/2017.
  */
-public class M495TeemoAttacking {
+public class _495_M_TeemoAttacking {
     public int findPoisonedDuration(int[] timeSeries, int duration) {
         Stack<Integer[]> stack = new Stack<>();
         for (int i = 0; i < timeSeries.length; i++) {
@@ -39,7 +39,7 @@ public class M495TeemoAttacking {
 
     public static void main(String[] args) {
         int[] timeSeries = new int[] {1,4};
-        M495TeemoAttacking sol = new M495TeemoAttacking();
+        _495_M_TeemoAttacking sol = new _495_M_TeemoAttacking();
         int rst = sol.findPoisonedDuration(timeSeries, 2);
         System.out.println(rst);
     }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by cheng on 4/3/2017.
  */
-public class M163SumClosest {
+public class _16_M_3SumClosest {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);//-3,0,1,2
         int rst = nums[0] + nums[1] + nums[2];//-2

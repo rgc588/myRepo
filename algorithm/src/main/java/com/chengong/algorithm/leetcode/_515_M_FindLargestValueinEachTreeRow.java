@@ -10,7 +10,7 @@ import java.util.Queue;
 /**
  * Created by cheng on 2/28/2017.
  */
-public class M515FindLargestValueinEachTreeRow {
+public class _515_M_FindLargestValueinEachTreeRow {
     public List<Integer> largestValues(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<TreeNode>();
         List<Integer> rst = new ArrayList<>();

@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 /**
  * Created by cheng on 4/12/2017.
  */
-public class M373FindKPairswithSmallestSums {
+public class _373_M_FindKPairswithSmallestSums {
     private int[] ref1;
     private int[] ref2;
 

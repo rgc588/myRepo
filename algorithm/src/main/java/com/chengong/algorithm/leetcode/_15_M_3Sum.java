@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by cheng on 4/3/2017.
  */
-public class M153Sum {
+public class _15_M_3Sum {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> rst = new ArrayList<>();
         if (nums == null || nums.length == 0) return rst;

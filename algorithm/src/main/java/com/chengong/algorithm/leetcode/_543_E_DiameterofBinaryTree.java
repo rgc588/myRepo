@@ -5,7 +5,7 @@ import com.chengong.algorithm.TreeNode;
 /**
  * Created by cheng on 4/3/2017.
  */
-public class E543DiameterofBinaryTree {
+public class _543_E_DiameterofBinaryTree {
     public int diameterOfBinaryTree(TreeNode root) {
         return helper(root)[1];
     }

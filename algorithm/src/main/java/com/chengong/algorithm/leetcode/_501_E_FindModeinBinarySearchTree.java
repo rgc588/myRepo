@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by cheng on 3/7/2017.
  */
-public class E501FindModeinBinarySearchTree {
+public class _501_E_FindModeinBinarySearchTree {
     int count = 1;
     int max = 0;
     Integer prev = null;

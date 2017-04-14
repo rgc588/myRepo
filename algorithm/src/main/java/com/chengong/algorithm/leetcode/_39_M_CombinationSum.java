@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by cheng on 3/31/2017.
  */
-public class M39CombinationSum {
+public class _39_M_CombinationSum {
     List<List<Integer>> rst = new ArrayList<>();
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -41,7 +41,7 @@ public class M39CombinationSum {
 
     public static void main(String[] args) {
         int[] test_input = new int[] {2,3,6,7};
-        M39CombinationSum sol = new M39CombinationSum();
+        _39_M_CombinationSum sol = new _39_M_CombinationSum();
         int target = 7;
         List<List<Integer>> rst = sol.combinationSum(test_input, target);
         System.out.print(rst);

@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by cheng on 3/20/2017.
  */
-public class M491IncreasingSubsequences {
+public class _491_M_IncreasingSubsequences {
     public List<List<Integer>> findSubsequences(int[] nums) {
         List<List<Integer>> rst = new ArrayList<>();
         List<Integer> seq = new ArrayList<>();
@@ -39,7 +39,7 @@ public class M491IncreasingSubsequences {
 
     public static void main(String[] args) {
         int[] input = new int[] {4,6,7,7};
-        M491IncreasingSubsequences sol = new M491IncreasingSubsequences();
+        _491_M_IncreasingSubsequences sol = new _491_M_IncreasingSubsequences();
         List<List<Integer>> rst = sol.findSubsequences(input);
         System.out.println(rst);
     }

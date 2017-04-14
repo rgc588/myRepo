@@ -34,7 +34,7 @@ package com.chengong.algorithm.leetcode;
  return (int) rev;
  }
  */
-public class E7ReverseInteger {
+public class _7_E_ReverseInteger {
     public int reverse(int x) {
         int rst = 0;
         while (x!=0) {

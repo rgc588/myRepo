@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 /**
  * Created by cheng on 3/3/2017.
  */
-public class H502IPO {
+public class _502_H_IPO {
     public int findMaximizedCapital(int k, int W, int[] Profits, int[] Capital) {
         MyComparator comp = new MyComparator();
         MyComparator2 comp2 = new MyComparator2();
@@ -49,7 +49,7 @@ public class H502IPO {
     }
 
     public static void main(String[] args) {
-        H502IPO sol = new H502IPO();
+        _502_H_IPO sol = new _502_H_IPO();
         int rst =sol.findMaximizedCapital(2, 0, new int[] {1,2,3}, new int[] {0,1,1});
         System.out.print(rst);
     }

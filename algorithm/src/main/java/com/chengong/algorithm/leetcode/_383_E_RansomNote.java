@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by cheng on 4/12/2017.
  */
-public class E383RansomNote {
+public class _383_E_RansomNote {
     public boolean canConstruct(String ransomNote, String magazine) {
         if (magazine == null) return false;
         if (ransomNote == null) return true;

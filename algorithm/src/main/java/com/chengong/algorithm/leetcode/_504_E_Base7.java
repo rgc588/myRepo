@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 3/3/2017.
  */
-public class E504Base7 {
+public class _504_E_Base7 {
     public String convertToBase7(int num) {
         if (num == 0) return "0";
         String sign = "";

@@ -3,7 +3,7 @@ package com.chengong.algorithm.leetcode;
 /**
  * Created by cheng on 2/7/2017.
  */
-public class M6ZigZagConversion {
+public class _6_M_ZigZagConversion {
     public String convert(String s, int numRows) {
         if (numRows < 1) throw new IllegalArgumentException("Invalid row number");
         if (numRows == 1) return s;

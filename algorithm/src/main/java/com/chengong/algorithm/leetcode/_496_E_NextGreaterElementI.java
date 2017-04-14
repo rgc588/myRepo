@@ -8,7 +8,7 @@ import java.util.Stack;
 /**
  * Created by cheng on 3/10/2017.
  */
-public class E496NextGreaterElementI {
+public class _496_E_NextGreaterElementI {
     public int[] nextGreaterElement(int[] findNums, int[] nums) {
         Stack<Integer> s = new Stack<>();
         Map<Integer, Integer> m = new HashMap<>();
