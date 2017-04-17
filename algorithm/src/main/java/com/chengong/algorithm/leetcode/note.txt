@@ -1,0 +1,2 @@
+1. binary search
+    a. index i, j: mid = i + (j-i)/2; mid = i + (j-i+1)2;
