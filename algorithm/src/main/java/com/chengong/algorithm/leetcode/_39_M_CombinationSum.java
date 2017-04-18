@@ -11,6 +11,7 @@ public class _39_M_CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> rst = new ArrayList<>();
         List<Integer> c = new ArrayList<>();
+        Arrays.sort(candidates);
         helper(0, candidates, target, c, rst);
         return rst;
     }
