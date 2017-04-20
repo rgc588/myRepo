@@ -1,3 +1,5 @@
 1. binary search
     a. index i, j: mid = i + (j-i)/2; mid = i + (j-i+1)2;
 2. contiguous -> DP: sub-array closed at i
+3. math: overflow(+,* use -,/ instead), divide by zero
+4. 
