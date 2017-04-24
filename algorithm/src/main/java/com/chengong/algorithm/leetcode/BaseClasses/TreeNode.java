@@ -1,4 +1,4 @@
-package com.chengong.algorithm;
+package com.chengong.algorithm.leetcode.BaseClasses;
 
 /**
  * Created by chengong on 11/11/15.

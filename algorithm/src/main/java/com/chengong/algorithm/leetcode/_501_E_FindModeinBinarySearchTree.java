@@ -1,6 +1,6 @@
 package com.chengong.algorithm.leetcode;
 
-import com.chengong.algorithm.TreeNode;
+import com.chengong.algorithm.leetcode.BaseClasses.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,7 @@
 package com.chengong.algorithm;
 
+import com.chengong.algorithm.leetcode.BaseClasses.TreeNode;
+
 /**
  * Created by chengong on 11/11/15.
  */

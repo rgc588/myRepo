@@ -3,3 +3,4 @@
 2. contiguous -> DP: sub-array closed at i
 3. math: overflow(+,* use -,/ instead), divide by zero
 4. graph, matrix, linked list(graph): prevent circle
+5. Java pass by copy of refer: using class variable
