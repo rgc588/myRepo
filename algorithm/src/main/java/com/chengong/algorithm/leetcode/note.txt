@@ -5,3 +5,4 @@
 4. graph, matrix, linked list(graph): prevent circle
 5. Java pass by copy of refer: using class variable
 6. Tree: stop at null or leaf node.
+7. LinkedList: two node same will usually break logic
