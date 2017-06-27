@@ -25,7 +25,7 @@ public class _71_M_SimplifyPath {
     }
 
     public static void main(String[] args) {
-        String input = "/...";
+        String input = "/.../a/";
         _71_M_SimplifyPath sol = new _71_M_SimplifyPath();
         System.out.print(sol.simplifyPath(input));
     }
