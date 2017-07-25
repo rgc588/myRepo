@@ -5,9 +5,7 @@ import com.chengong.algorithm.leetcode.BaseClasses.Point;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by cheng on 5/30/2017.
- */
+
 public class _149_H_MaxPointsonaLine {
     public int maxPoints(Point[] points) {
         int rst = 0;
@@ -34,12 +32,44 @@ public class _149_H_MaxPointsonaLine {
         return rst;
     }
 
+    public int maxPoints2(Point[] points) {
+        if(points == null || points.length == 0) return 0;
+        int max = 0;
+        for (int i = 0; i < points.length; i++) {
+            Point p = points[i];
+            Map<String, Integer> map = new HashMap<>();
+            int count = 0;
+            int self = 1;
+            for (int j = i+1; j < points.length; j++) {
+                Point q = points[j];
+                int x = p.x-q.x;
+                int y = p.y-q.y;
+                String key = "";
+                if (x == 0 && y == 0) {
+                    self++;
+                    continue;
+                } else if (x == 0) {
+                    key = "0";
+                } else {
+                    int gcd = getGCD(x, y);
+                    key = String.valueOf(x/gcd)+"/"+String.valueOf(y/gcd);
+                }
+                map.put(key, map.getOrDefault(key, 0)+1);
+                count = Math.max(count, map.get(key));
+            }
+            max = Math.max(max, count+self);
+        }
+        return max;
+    }
+
+    private int getGCD(int x, int y) {
+        if (y == 0) return x;
+        return getGCD(y, x%y);
+    }
+
     public static void main(String[] args) {
-        Point p1 = new Point(0,0);
-        Point p2 = new Point(94911151,94911150);
-        Point p3 = new Point(94911152,94911151);
-        Point[] input = new Point[] {p1, p2, p3};
+        Point[] input = new Point[] {new Point(-4,-4), new Point(-8,-582), new Point(-3,-3), new Point(-9, -651), new Point(9, 591)};
         _149_H_MaxPointsonaLine sol = new _149_H_MaxPointsonaLine();
-        System.out.print(sol.maxPoints(input));
+        System.out.println(sol.maxPoints(input));
     }
 }

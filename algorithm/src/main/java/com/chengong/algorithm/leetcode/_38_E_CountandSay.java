@@ -32,4 +32,30 @@ public class _38_E_CountandSay {
         }
         return sb.toString();
     }
+
+    public String countAndSay2(int n) {
+        if (n <= 0) return "";
+        String s = "1";
+        while(n > 1) {
+            int count = 1;
+            int index = 0;
+            String tmp = "";
+            while(index < s.length()) {
+                while(index+1<s.length() && s.charAt(index+1) == s.charAt(index)) {
+                    count++;
+                    index++;
+                }
+                tmp = tmp + count + s.charAt(index);
+                index++;
+                count = 1;
+            }
+            s = tmp;
+            n--;
+        }
+        return s;
+    }
+
+    public static void main(String[] args) {
+        System.out.print(new _38_E_CountandSay().countAndSay2(5));
+    }
 }

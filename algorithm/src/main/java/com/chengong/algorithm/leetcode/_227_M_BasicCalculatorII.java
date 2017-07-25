@@ -1,8 +1,8 @@
 package com.chengong.algorithm.leetcode;
 
-/**
- * Created by cheng on 5/16/2017.
- */
+
+import java.util.Stack;
+
 public class _227_M_BasicCalculatorII {
     public int calculate(String s) {
         s = s.replaceAll(" ", "");
@@ -40,9 +40,45 @@ public class _227_M_BasicCalculatorII {
         return sum;
     }
 
+    public int calculate2(String s) {
+        int num = 0;
+        char sign = '+';
+        Stack<Integer> stack = new Stack<>();
+        int i = 0;
+        while(i < s.length()) {
+            char c = s.charAt(i);
+            if (isNumber(c)) {
+                num = num*10 + (c-'0');
+            }
+            if ((!isNumber(c) && c != ' ') || i == s.length()-1) {
+                if (sign == '+') {
+                    stack.push(num);
+                } else if (sign == '-') {
+                    stack.push(-num);
+                } else if (sign == '*') {
+                    stack.push(stack.pop()*num);
+                } else {
+                    stack.push(stack.pop()/num);
+                }
+                num = 0;
+                sign = c;
+            }
+            i++;
+        }
+        int rst = 0;
+        while(!stack.isEmpty()) {
+            rst += stack.pop();
+        }
+        return rst;
+    }
+
+    private boolean isNumber(char c) {
+        return c >= '0' && c <= '9';
+    }
+
     public static void main(String[] args) {
-        String input = "1/2";
+        String input = "42";
         _227_M_BasicCalculatorII sol = new _227_M_BasicCalculatorII();
-        System.out.print(sol.calculate(input));
+        System.out.println(sol.calculate(input));
     }
 }
